@@ -189,6 +189,10 @@ main {
     font-size: 3.2rem; /* Slightly larger description text */
     margin-bottom: 30px; /* Space below the description */
 }
+.welcome-description2 {
+    font-size: 2.2rem; /* Slightly larger description text */
+    margin-bottom: 10px; /* Space below the description */
+}
 
 .cta-button {
     
@@ -521,3 +525,4 @@ footer {
     text-align: center;
     flex-shrink: 0;
 }
+
