@@ -5,119 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VAC</title>
     <link rel="icon" href="../Assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1 class="site-title">VAC</h1>
-            <nav id="menu">
-                <button class="menu-icon" aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-links">
+        <div class="container">
+            <h1 class="logo">Visionary Arts</h1>
+            <nav>
+                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <main>
-        <div class="prism-background"></div>
-        <section id="home" class="welcome-section">
-            <div class="welcome-content">
-                <h2 class="welcome-title">Welcome to Visionary Arts</h2>
-                <p class="welcome-description">Discover a world of possibilities!</p>
-                <p class="welcome-description2">
-                    <a href="Cricket\Cricket.html" style="text-decoration: none; color: inherit;">
-                        We have predicted the performance scores for Current IPL players Click here..
-                    </a>
-                </p>                
-                <a href="#services" class="cta-button">Explore Our Services</a>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Visionary Arts Company</h2>
+                <p class="lead">Discover a world of possibilities!</p>
+                <a href="#services" class="btn">Explore Our Services</a>
             </div>
         </section>
 
-
-
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>Explore the services we offer.</p>
-            <div class="services-container">
-                <div class="service-box">
-                    <div class="service-cover" style="background-image: url('Assets/Services/crickethelmet.jpeg');">
-                        <div class="service-content">
-                            <h3>Real-time Cricket Analytics</h3>
-                            <p>Get instant insights and analysis for cricket matches.</p>
-                            <a href="cricket-analytics.html" class="service-link">Learn More</a>
-                        </div>
+        <section id="services" class="services">
+            <div class="container">
+                    <div class="service-description">
+                    <h2>Explore the services we offer</h2></div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="Assets/Services/crickethelmet.jpeg" alt="Cricket Analytics">
+                        <h3>Real-time Sports Analytics</h3>
+                        <p>We have predicted the performance scores for Current IPL players. </p>
+                        <a href="Cricket/Cricket.html" class="btn-secondary">Learn More</a>
                     </div>
-                </div>
-                <div class="service-box">
-                    <div class="service-cover" style="background-image: url('Assets/Services/business_magnifier.jpeg');">
-                        <div class="service-content">
-                            <h3>Analytics for Business</h3>
-                            <p>Leverage data-driven decisions for your business growth.</p>
-                            <a href="business-stats.html" class="service-link">Learn More</a>
-                        </div>
+                    <div class="service-card">
+                        <img src="Assets/Services/business_magnifier.jpeg" alt="Business Analytics">
+                        <h3>Business Intelligence</h3>
+                        <p>Leverage data-driven decisions for your business growth.</p>
+                        <a  class="btn-secondary">Coming soon.</a>
                     </div>
-                </div>
-                <div class="service-box">
-                    <div class="service-cover" style="background-image: url('Assets/Services/data_cloud.jpeg');">
-                        <div class="service-content">
-                            <h3>Data Processing</h3>
-                            <p>Efficient and accurate processing of large datasets.</p>
-                            <a href="data-processing.html" class="service-link">Learn More</a>
-                        </div>
+                    <div class="service-card">
+                        <img src="Assets/Services/data_cloud.jpeg" alt="Data Processing">
+                        <h3>Data Engineering</h3>
+                        <p>We are developing a product which is efficient and accurate processing of large datasets.</p>
+                        <a href="https://davis-connect.vercel.app/" class="btn-secondary">Learn More</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <div class="about-container">
-                <div class="about-image-container">
-                    <div class="about-image"></div>
-                </div>
+        <section id="about" class="about">
+            <div class="container">
                 <div class="about-content">
                     <h2>About VAC</h2>
-                    <h3>Virtual Arts Company</h3>
                     <ul>
-                        <li>I started this initiative to expand knowledge in the field of data science.</li>
-                        <li>Our primary goal is to help businesses grow through data-driven insights.</li>
-                        <li>We leverage cutting-edge analytics to drive innovation and improve decision-making.</li>
-                        <li>Our team combines advanced data science techniques with deep industry knowledge.</li>
-                        <li>We deliver unparalleled solutions, including predictive modeling and machine learning applications.</li>
-                        <li>We are committed to empowering clients with the tools they need to stay competitive.</li>
-                        <li>By continuously expanding our expertise, we transform data into actionable strategies for sustainable growth.</li>
+                        <li>Initiative to expand knowledge in data science</li>
+                        <li>Help businesses grow through data-driven insights</li>
+                        <li>Leverage cutting-edge analytics for innovation</li>
+                        <li>Combine advanced techniques with industry knowledge</li>
+                        <li>Deliver unparalleled solutions including predictive modeling</li>
+                        <li>Empower clients with competitive tools</li>
+                        <li>Transform data into actionable strategies for growth</li>
                     </ul>
+                </div>
+                <div class="about-image">
+                    <img src="Assets/About/about.jpeg" alt="About VAC">
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries.</p>
-            <div class="contact-info">
-                <div class="location">
-                    <h3>Our Location</h3>
-                    <p>We are based in Birmingham, England, UK</p>
-                </div>
-                <div class="contact-methods">
-                    <h3>Contact Methods</h3>
-                    <p>Phone: 
-                        <a href="tel:+447393067325" class="phone-link">+44 7393 067325</a>
-                    </p>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Birmingham, England, UK</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p><a href="tel:+447393067325">+44 7393 067325</a></p>
+                    </div>
                     <div class="contact-buttons">
-                        <a href="https://wa.me/447393067325" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-                            WhatsApp Us
+                        <a href="https://wa.me/447393067325" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Us
                         </a>
-                        <a href="tel:+447393067325" class="call-button">
-                            Call Us
+                        <a href="tel:+447393067325" class="btn btn-call">
+                            <i class="fas fa-phone"></i> Call Us
                         </a>
                     </div>
                 </div>
@@ -126,8 +110,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 VAC. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 VAC. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="index.js"></script>
+
 </body>
 </html>
